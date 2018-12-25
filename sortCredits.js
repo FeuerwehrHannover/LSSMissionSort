@@ -20,7 +20,7 @@ missionalliance.sort(function(a, b){
 missionalliance.appendTo('div#mission_list_alliance');
 faye.subscribe('/private-alliance140de', function(message) {
         if(message.search("missionMarkerAdd()") > -1) {
-        console.log("marker");
+        //console.log("marker");
         }
     });
 });
