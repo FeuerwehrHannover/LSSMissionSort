@@ -6,4 +6,4 @@
 // @match        https://www.leitstellenspiel.de/
 // @grant        none
 // ==/UserScript==
-$.getScript('https://cdn.jsdelivr.net/gh/FeuerwehrHannover/LSSMissionSort/Date.js', function(){}, false);
+$.getScript('https://cdn.jsdelivr.net/gh/FeuerwehrHannover/LSSMissionSort/sortDate.js', function(){}, false);
