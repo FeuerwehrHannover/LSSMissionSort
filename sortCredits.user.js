@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         AUTOUPDATE | Einsatzsortierung
+// @name         AUTOUPDATE | Einsatzsortierung Credits
 // @version      0.1
-// @description  Einsätze sortieren lassen
+// @description  Einsätze nach dem Verdienst sortieren lassen
 // @author       FeuerwehrHannover
 // @match        https://www.leitstellenspiel.de/
 // @grant        none
