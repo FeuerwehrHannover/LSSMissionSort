@@ -45,7 +45,7 @@ $( document ).ready(function() {
   var time = 500;
   var count = 0;
   var sortmissionalliance = $("#mission_list_alliance").find(".missionSideBarEntry").length;
-  $("#btn-group-mission-select").append('<button id="sortdate" class="btn btn-xs btn-success mission_selection"><span class="glyphicon glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span></button>');
+  $("#btn-group-mission-select").append('<button id="sortdate" class="btn btn-xs btn-success mission_selection"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></button>');
   $( "#sortdate" ).click(function() {
     count = 0;
     var sortmissionalliance = $("#mission_list_alliance").find(".missionSideBarEntry").length;
