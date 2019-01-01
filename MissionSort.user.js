@@ -2,6 +2,7 @@
 // @name         Einsatzsortierung
 // @version      0.4
 // @author       FeuerwehrHannover
+// @description  Einsätze nach Verdienst und Erstellungszeit sortieren lassen.
 // @include      *://www.leitstellenspiel.de/
 // @include      *://www.leitstellenspiel.de/missions/*
 // ==/UserScript==
