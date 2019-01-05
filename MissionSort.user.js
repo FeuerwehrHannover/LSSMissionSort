@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Einsatzsortierung
-// @version      0.4.1
+// @version      0.6.1
 // @author       FeuerwehrHannover
 // @description  Einsätze nach Verdienst und Erstellungszeit sortieren lassen.
 // @include      *://www.leitstellenspiel.de/
@@ -10,7 +10,7 @@ $(document).ready(function(){if(window.location.pathname=="/"){var sortcreditsva
 if($(a).find("a.map_position_mover").clone().children().remove().end().text()>$(b).find("a.map_position_mover").clone().children().remove().end().text()){return 1;}
 return 0;});missionown.appendTo('div#mission_list');missionalliance.sort(function(a,b){if($(a).find("a.map_position_mover").clone().children().remove().end().text()<$(b).find("a.map_position_mover").clone().children().remove().end().text()){return-1;}
 if($(a).find("a.map_position_mover").clone().children().remove().end().text()>$(b).find("a.map_position_mover").clone().children().remove().end().text()){return 1;}
-return 0;});});faye.subscribe('/private-alliance140de',function(message){if(message.search("missionMarkerAdd()")>-1){}});}
+return 0;});missionalliance.appendTo('div#mission_list_alliance');});faye.subscribe('/private-alliance140de',function(message){if(message.search("missionMarkerAdd()")>-1){}});}
 if(window.location.pathname.indexOf("missions/")>-1){function getKey(object,value){return parseInt(Object.keys(object).find(key=>object[key]===value));}
 function sorterrorundundefined(error){$(".mission_header_info div:eq(0)").append('<div class="sorterror"><p style="margin: 0;"><strong>Fehler!</strong>'+error+'</p></div>');$(".sorterror").css({"background-color":"#ffdddd","border-left":"6px solid #f44336","margin-bottom":"15px","padding":"4px 12px","display":"flex","align-items":"center"});}
 function alliance(){if($("#mission_finish_now_btn").length){return"sort-credits";}else{return"sort-credits-alliance";}}
