@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Einsatzsortierung
-// @version      0.9.1
+// @version      1.0
 // @author       FeuerwehrHannover
 // @include      *://www.leitstellenspiel.de/
 // @include      *://www.leitstellenspiel.de/missions/*
